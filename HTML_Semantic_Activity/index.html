@@ -6,23 +6,39 @@
     <title>Your Brand Here</title>
 </head>
 <body>
-    <style> body {text-align: center;}</style>
+    <style> section {text-align: center;}</style>
+    <style> header {text-align: center;}</style>
+    <style> nav {text-align: right;}</style>
+  
+  
 <!-- Header -->
-    <header>
+    <header id="home">
         <h1>Your Brand Here</h1>
         <h3>Your brand description here</h3>
     </header>
 <hr>
+<!-- Navigation -->
+    <nav>
+    
+        <a href="#home"><strong>Home</strong></a>
+        <a href="#about"><strong>About</strong></a>
+        <a href="#contact"><strong>Contact Us</strong></a>
+    
+    </nav>
+<hr>
+<main>
 <!-- About the brand-->
-    <section>
+    <section id="about">
         <img src="images/yourbrandhere.jpg" alt="">
         <h2>About</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsam earum totam iure cumque quo odit modi illum facilis id ut distinctio aperiam iusto eaque odio reprehenderit. Distinctio, at eaque.</p>
     </section>
 <hr>
-    <section>
+    
+</main>
 <!-- Contact us -->
-        <form>
+
+        <form id="contact">
         <h2>Contact us</h2>
         <div>
             <label for="name"><strong>Name:</strong></label>
@@ -38,13 +54,14 @@
             <label for="message"><strong>What can we help you with?</strong></label>
         </div>
         <div>
-            <textarea id="message" cols="40" rows="5" placeholder="Message"></textarea>
+            <textarea id="message" cols="40" rows="5" placeholder="Enter your message here"></textarea>
         </div>
-
-        
+        <button type="submit">Send Message</button>
         </form>
-    </section>
-
+<hr>
+        <footer>
+            <p>Your footer here (©year)</p>
+        </footer>
 
 </body>
 </html>
